@@ -120,3 +120,88 @@ line-height: 25px; /* 166.667% */
     margin: 20px 0px 15px;
 }
 /* ############################################ */
+.online-games{
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+.online-games-img{
+    display: flex;
+    padding: 80px;
+    /* border: 2px solid blue; */
+}
+.image1 img {
+    width: 230px;
+    height: 300px;
+}
+.image2 img {
+    width: 230px;
+    height: 300px;
+}
+.image3 img {
+    width: 230px;
+    height: 300px;
+}
+.image4 img {
+    width: 230px;
+    height: 300px;
+}
+.para-text{
+    width: 310px;
+    font-size: smaller;
+}
+/* ##################################### */
+.play-section{
+    display: flex;
+}
+.play-instant{
+    padding: 170px;
+    text-align: end;
+    /* border: 1px solid blue; */
+}
+.play-instant h2{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.play-instant p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.play-picture img{
+    width: 500px;
+    margin: 80px;
+}
+
+/* mini section start from here */
+
+.mini-section{
+    margin-top: -250px;
+    margin-left: 550px;
+}
+/* ############################## */
+
+.play-section2{
+    display: flex;
+    margin-top: 50px;
+}
+.play-instant2{
+    padding: 150px;
+    margin-bottom: 20px;
+}
+.play-instant2 p{
+    font-size: 14px;
+    margin-top: 20px;
+    /* margin-top: 10px; */
+}
+.play-picture2 img{
+    width: 500px;
+    height: 400px;
+    margin: 80px;
+}
+
+/* mini section start from here */
+
+.mini-section2{
+    margin-top: -230px;
+    margin-left: 550px;
+}
+/* ############################### */
