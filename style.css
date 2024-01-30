@@ -6,10 +6,12 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+
 .nav-bar{
     /* border: 2px solid blue; */
     padding: 10px;
     display: flex;
+    /* flex-direction: column; */
     justify-content:space-around;
     align-items: center;
 }
@@ -35,7 +37,24 @@ body{
     border-radius: 4px;
     color: red;
 }
-/* ###################################### */
+/* small screen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%** */
+@media screen and (max-width:576px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menus a{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #nav-button{
+        padding: 20px;
+    }
+}
+
+
+/* ###################################################################*/
 .section-left-right{
     /* border: 1px solid blue; */
     display: flex;
@@ -74,6 +93,21 @@ text-transform: uppercase;
 .section-right img{
     width: 611px;
     /* border: 1px solid blue; */
+}
+@media screen and (max-width:576px){
+    .section-left-right{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .section-left{
+        margin-top: 80px;
+        padding: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    
 }
 /* ##################################### */
 .gamer-section{
@@ -119,7 +153,40 @@ line-height: 25px; /* 166.667% */
     font-weight: 700;
     margin: 20px 0px 15px;
 }
-/* ############################################ */
+
+@media screen and (max-width:576px){
+    .gamer-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .gamer-right{
+        padding: 100px;
+        text-align: center;
+    }
+    .gamer-right p{
+        color: #534C64;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 15px; /* 166.667% */
+        }
+        .gamer-right h2{
+            text-align: center;
+            /* font-family: "Work Sans"; */
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #8758F1;
+            margin-bottom: 10px;
+            }
+}
+
+
+/* ############################################################### */
 .online-games{
     text-align: center;
     /* border: 1px solid blue; */
@@ -149,7 +216,17 @@ line-height: 25px; /* 166.667% */
     width: 310px;
     font-size: smaller;
 }
-/* ##################################### */
+
+@media screen and (max-width:576px){
+ .online-games-img{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 150px;
+
+    }
+}
+/* ################################################## */
 .play-section{
     display: flex;
 }
@@ -177,6 +254,35 @@ line-height: 25px; /* 166.667% */
     margin-top: -250px;
     margin-left: 550px;
 }
+
+
+
+@media screen and (max-width:576px){
+    .play-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .play-instant{
+        text-align: center;
+        padding: 10px;
+
+    }
+    .play-instant h2{
+        font-size: 24px;
+    }
+    .play-instant p{
+        font-size: 16px;
+    }
+    .play-picture img{
+        width: 350px;
+        /* margin: 80px; */
+    }
+    .mini-section{
+        margin-top: -150px;
+        margin-left: -50px;
+    }
+    
+}
 /* ############################## */
 
 .play-section2{
@@ -203,6 +309,28 @@ line-height: 25px; /* 166.667% */
 .mini-section2{
     margin-top: -230px;
     margin-left: 450px;
+}
+
+
+@media screen and (max-width:576px){
+    .play-section2{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 50px; */
+    }
+    .mini-section2{
+        margin-top: -630px;
+        margin-left: 50px;
+    }
+    .play-instant2{
+        padding: 40px;
+        text-align: center;
+        
+    }
+    .play-instant2 p{
+        margin-top: -30px;
+        padding: 40px;
+    }
 }
 /* ############################### */
 .careers{
@@ -240,6 +368,19 @@ line-height: 25px; /* 166.667% */
 .careers-right img{
     width: 500px;
 }
+
+
+@media screen and (max-width:576px){
+    .careers{
+       display: flex;
+       flex-direction: column;
+        padding: 30px;
+        /* justify-content: space-evenly; */
+        background-color: #FF55AE;
+        margin-top: 200px;
+        color: #E7E6E9;
+    }
+}
 /* ########################################3 */
 .container {
     display: flex;
@@ -261,6 +402,18 @@ line-height: 25px; /* 166.667% */
     border-radius: 50px;
     display: flex;
     align-items:center;
+  }
+  @media  screen and (max-width:576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        padding: 30px;
+        gap: 30px;
+      }
   }
   /* ################################################# */
   .footer-main{
@@ -304,4 +457,33 @@ line-height: 25px; /* 166.667% */
 .last-p{
     padding: 20px;
     font-size: 12px;
+}
+@media screen and (max-width:576px){
+
+    .footer-main{
+        /* text-align: center; */
+        /* background-color: #0B0223; */
+        color: #E7E6E9;
+      }
+      .footer-first{
+        display:flex;
+      }
+      .six-items{
+        display: flex;
+        /* align-items: center; */
+      }
+      .six-icon{
+      }
+      .six-icon .fa-brands{
+        font-size: 28px;
+        margin-left: 12px;
+    
+      }
+      .four-ptag{
+        text-align: center;
+      }
+    .last-p{
+        padding: 20px;
+        font-size: 12px;
+    }
 }
